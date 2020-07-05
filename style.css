@@ -1,0 +1,190 @@
+*{padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* Navigation bar*/
+       #navbar{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           position: relative;
+        top: 0;
+       }
+    nav>#logo{
+        font-size: 30px;
+    width: 260px;
+    height: 133px;
+    background-color: #FF9800;
+    font-family: fantasy;
+    line-height: 2.8;
+    border-radius: 50%;
+    padding-left: 39px;
+
+    }
+    /*navigation bar:list*/
+    
+    #navbar ul{
+        display: flex;
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    #navbar ul li{
+        font-size: 1.6rem;
+        font-family: sans-serif;
+    font-weight: bold;
+    }
+    #navbar ul li a{
+        display: block;
+        color: black;
+        padding: 3px 22px;
+        transition: 0.2s;
+
+    }
+    #navbar ul li a:hover{
+        display: block;
+        color: white;
+        padding: 3px 22px;
+background-color: rgba(0, 0, 0, 0.623);
+border-radius: 20px;
+
+    }
+
+    /*Home section*/
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 200px;
+        align-items: center;
+        justify-content: center;
+        height: 475px;
+    }
+    #home::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("chole.jpg") no-repeat center center/cover ;
+        height:82% ;
+        width: 100%;
+       z-index: -1;
+       opacity: 0.6;
+    }
+    #home h1{
+        text-align: center;
+    }
+    #home p{
+        font-family: arial;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+   
+    
+    /*Services section*/
+    #services{
+        margin: 45px;
+        display: flex;
+
+    }
+   #services .box {
+       padding: 20px;
+       margin: 3px 6px;
+       border-radius: 25px;
+       background-color: #ff980042;
+   }
+   #services .box img{
+       height: 160px;
+       display: block;
+       margin: auto;
+   }
+   .box a {
+    display: block;
+    margin-top: 13px;
+    color: white;
+    font-size: 1.3rem;
+    background-color: black;
+    text-align: center;
+    padding: 6px;
+    border-radius: 25px;
+   }
+   #services p {
+       font-size: 1.2rem;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+  .foodicons{
+      display: flex;
+  }
+
+   /* Contact section*/
+   
+   .form-group{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       
+   }
+   .form-group label {
+       font-size: 1.5rem;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   .form-group input {
+       padding: 10px ;
+             font-size: 1.5rem;
+             border-radius: 10px;
+             border: none;
+             background-color: #9e9e9e80;
+             margin: 15px;
+   }
+  .form-group textarea {
+      padding: 20px;
+      font-size: 20px;
+  }
+
+
+
+
+    /*utility classes*/
+    .h-primary{
+        font-size: 2.8rem;
+        padding: 12px;
+        font-family: cursive;
+    }
+    .h-secondary {
+        font-family: cursive;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: black;
+        color:white ;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .btn:hover{
+        background-color: rgba(0, 0, 0, 0.534);
+    }
+.center{text-align: center;
+    margin-top: 11px;}
+
+ /*footer*/
+
+ footer{
+     background-color: black;
+     color: blanchedalmond;
+     padding: 5px;
+     margin-top: 200px;
+ }
